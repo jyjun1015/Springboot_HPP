@@ -11,7 +11,8 @@ public class ArticleForm {
 
     private String title;
     private String content;
-
+    
+    // jpa entity 로 변환
     public Article toEntity() {
         return new Article(null, title, content);
     }
